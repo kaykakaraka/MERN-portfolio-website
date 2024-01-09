@@ -19,3 +19,10 @@ connection.once('open', () => {
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 });
+
+const examplesRouter = require('./routes/example')
+
+
+app.use('/examples', examplesRouter);
+
+;
